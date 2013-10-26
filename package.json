@@ -1,0 +1,11 @@
+{
+    "name": "AptChat",
+    "version": "0.0.1",
+    "description": "Apt chat, ",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "jade": "latest"
+    },
+    "author": "@sh!sh"
+}

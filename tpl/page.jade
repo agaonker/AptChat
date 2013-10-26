@@ -1,0 +1,15 @@
+!!!
+html
+	head
+		title= "AptChat"
+		script(src='/chat.js')
+		script(src='/lib/jquery-1.10.2.min.js')
+		script(src='/socket.io/socket.io.js')
+	body
+		#content(style='width: 960px; height: 600px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll; font-size:x-large;')
+		.controls
+		| Name: 
+		input#name(style='width:350px;')
+		br
+		input.field(style='width:350px;', id="field")
+		input.send(type='button', value='send', id="send")
