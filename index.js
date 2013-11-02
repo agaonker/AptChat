@@ -24,6 +24,10 @@ io.sockets.on('connection', function (socket) {
 app.get("/", function(req, res){
     res.render("page");
 });
+
+app.get('/connect', function (req, res) {
+  res.sendfile(__dirname + '/tpl/connect.html');
+});
  
 
 console.log("Listening on port " + port);
