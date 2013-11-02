@@ -32,8 +32,9 @@
         // handle a session response from any of the auth related calls
         function handleSessionResponse() {
             FB.api('/me', function(response) {
-                console.log(response);
-                $('#user-info').html(response.id + ' - ' + response.name);
+                if(response && response.name){
+                    $('#user-info').html("Hello " + response.name);
+                }    
             });
         }
     </script>
